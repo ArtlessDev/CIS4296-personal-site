@@ -25,8 +25,9 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
+    <!--
     <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
+      fetch('Jair Anlas,picture')
         .then((response) => response.json())
         .then(({ results }) => results[0])
         .then(({ name, picture }) => {
@@ -38,18 +39,19 @@
           document.querySelector('#profilepic').src = picture.large
         })
     </script>
+    -->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
-    <!-- Set Page Title Here -->
-    <title></title>
+    
+    <title>Jair Anlas Web page</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container-fluid p-2 px-lg-2 py-lg-0">
-        <!-- Set Name Here -->
+        <h1 class="text-white">Jair Anlas</h1>
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler bg-white"
@@ -93,9 +95,10 @@
       <div
         class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
       >
-      <!-- Set Photo Here -->
+      
         <img
-          style="height: 150px; width: 150px"
+          src="images/jair.JPG"
+          style="height: 223px; width: 148px"
           class="rounded-circle"
           draggable="false"
           id="profilepic"
@@ -103,9 +106,8 @@
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
-          <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name">Jair Anlas</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -116,54 +118,12 @@
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
         <div class="col text-center">
           <img
-            src="images/python.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Python"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/angular.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Angular"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/typescript.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="TypeScript"
-          />
-        </div>
-
-        <div class="col text-center">
-          <img
             src="images/csharp.jpg"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="C#"
           />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/java.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Java"
-          />
-        </div>
-
         <div class="col text-center">
           <img
             src="images/aspnet.jpg"
@@ -174,18 +134,26 @@
         </div>
         <div class="col text-center">
           <img
-            src="images/mssql.jpg"
+            src="images/python.jpg"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Microsoft SQL Server"
+            title="Python"
           />
         </div>
         <div class="col text-center">
           <img
-            src="images/mongodb.jpg"
+            src="images/java.jpg"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="MongoDB"
+            title="Java"
+          />
+        </div>
+        <div class="col text-center">
+          <img
+            src="images/mssql.jpg"
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="Microsoft SQL Server"
           />
         </div>
       </div>
@@ -212,21 +180,27 @@
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <a href="https://owlhacks-2023.netlify.app/" class="text-primary">
+        <h4>Question Anonymously</h4></a>
+        <h5 class="h5 mx-auto text-opacity-75 text-primary mb-4">
+          OwlHacks 2023</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+          This application was created in 36 hours. It's use case is for in-person 
+          classrooms. How it works is, with a database, setup with Firebase, a 
+          teacher will be able to login to their classroom and provide a generated
+          classroom code to their students. For children, they may not have the 
+          courage to verbally ask a question out of fear of being mocked; this 
+          allows those students to ask the questions that they have just like their 
+          classmates.
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <a href="https://plant-auction.netlify.app/" class="text-primary">
+        <h4>Plant Auction</h4></a>
+        <h5 class="h5 mx-auto text-opacity-75 text-primary mb-4">
+          HackCommerce 2023</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
@@ -239,7 +213,10 @@
         </p>
       </div>
       <div class="row w-100">
-        <h5>Query Dating Site</h5>
+        <a href="https://food-drive-civichacks.netlify.app/" class="text-primary">
+        <h4>Food Drive Locator</h4></a>
+        <h5 class="h5 mx-auto text-opacity-75 text-primary mb-4">
+          CivicHacks 2023</h5>
       </div>
       <div class="row w-100">
         <p class="text-justify">
@@ -271,7 +248,7 @@
       </div>
       <div class="row mx-auto mb-4">
         <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
-          Not as tasty as a main course, but close.
+          What I learned in boating school is...
         </h5>
       </div>
       <div class="row w-100 justify-content-center my-3 gap-4">
@@ -315,14 +292,6 @@
         >
           <h5 class="m-0">Component-Based Software Design</h5>
         </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%202109"
-          target="_blank"
-        >
-          <h5 class="m-0">Database Management Systems</h5>
-        </a>
         <div class="row mt-5 next justify-content-center align-items-center">
           <a href="#contact" class="text-center"
             ><iconify-icon
@@ -344,11 +313,11 @@
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          I don't bite.
+          I will always respond.
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:jairanlas@gmail.com" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -358,7 +327,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="https://www.linkedin.com/in/jair-anlas-57b589164/" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -368,7 +337,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/artlessDev" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
